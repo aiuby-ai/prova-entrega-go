@@ -1,0 +1,1 @@
+{ "version": 1, "on": { "push": { "branches": ["main"] } }, "stages": [ { "name": "test", "image": "go126", "steps": [{ "name": "unit", "run": "go vet ./... && go test ./... -v" }] } ] }
